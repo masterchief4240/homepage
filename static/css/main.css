@@ -1,0 +1,72 @@
+:root {
+    --black: black;
+    --antiquewhite: #fdfdfd;
+    --white: #ffffff;
+    --blackBg: #0f1112;
+    --whiteFontWithBlackBg: #adaaa6;
+}
+* {
+    font-family: Bahnschrift;
+    color: var(--fontColor);
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+}
+body {
+    background: var(--bg);
+}
+.innerwrap {
+    margin-left: 28px;
+    margin-right: 28px;
+    margin-top: 8px;
+}
+li {
+    list-style: disc;
+}
+/* #welmsg means ID element with name welmsg. .light-theme means all elements with class="light-theme" in the element*/
+.light-theme {
+    --fontColor: var(--black);
+    --bg: var(--antiquewhite);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme {
+    --fontColor: var(--whiteFontWithBlackBg);
+    --bg: var(--blackBg);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background: var(--btnBg);
+}
+.top-bar {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-family: Verdana;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+.socials {
+    text-align: right;
+}
+.introText {
+    font-size: large;
+}
+.space100px {
+    padding-top: 100px;
+}
+.space20px {
+    padding-top: 20px;
+}
